@@ -1,6 +1,6 @@
 {
   "presets": [
-    [ "es2015", { "loose": true, "modules" : false } ],
+    ["es2015", { "loose": true, "modules": false }],
     "stage-0",
     "react"
   ],
@@ -20,9 +20,7 @@
       ]
     },
     "test": {
-      "plugins": [
-        "transform-es2015-modules-commonjs"
-      ]
+      "plugins": ["transform-es2015-modules-commonjs"]
     }
   }
 }

@@ -1,52 +1,55 @@
-import React, { createElement, Component } from 'react';
-import PropTypes from 'prop-types';
-
+import PropTypes from 'prop-types'
+import React from 'react'
 import {
-  Heading,
-  Image,
+  BlockQuote,
   Code,
   CodePane,
-  BlockQuote,
+  Heading,
+  Image,
   Link,
   List,
   ListItem,
   Quote,
   S,
-  Text,
   Table,
-  TableHeader,
-  TableRow,
-  TableHeaderItem,
   TableBody,
-  TableItem
-} from 'spectacle';
-
+  TableHeader,
+  TableHeaderItem,
+  TableItem,
+  TableRow,
+  Text,
+} from 'spectacle'
 
 const _Heading = size => {
-  const component = ({ children }) => <Heading size={size}>{children}</Heading>;
-  component.propTypes = { children: PropTypes.node };
-  return component;
-};
+  const component = ({ children }) => (
+    <Heading size={size}>{children}</Heading>
+  )
+  component.propTypes = { children: PropTypes.node }
+  return component
+}
 
 const _S = type => {
-  const component = ({ children }) => <S type={type}>{children}</S>;
-  component.propTypes = { children: PropTypes.node };
-  return component;
-};
+  const component = ({ children }) => <S type={type}>{children}</S>
+  component.propTypes = { children: PropTypes.node }
+  return component
+}
 
 const _CombineBlockQuote = ({ children }) => (
   <BlockQuote>
     <Quote>{children}</Quote>
   </BlockQuote>
-);
+)
 
-_CombineBlockQuote.propTypes = { children: PropTypes.node };
+_CombineBlockQuote.propTypes = { children: PropTypes.node }
 
 const _CodePane = ({ children, language }) => (
   <CodePane theme="external" lang="javascript" source={children} />
-);
+)
 
-_CodePane.propTypes = { code: PropTypes.string, language: PropTypes.string };
+_CodePane.propTypes = {
+  code: PropTypes.string,
+  language: PropTypes.string,
+}
 
 export default {
   a: Link,
@@ -71,5 +74,5 @@ export default {
   th: TableHeaderItem,
   tbody: TableBody,
   tr: TableRow,
-  td: TableItem
-};
+  td: TableItem,
+}
