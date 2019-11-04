@@ -23,8 +23,8 @@
     "spectacle-renderer": "^0.0.3"
   },
   "devDependencies": {
-    "@mdx-js/loader": "0.15.7",
-    "@mdx-js/mdx": "0.15.7",
+    "@mdx-js/loader": "1.5.1",
+    "@mdx-js/mdx": "1.5.1",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
     "babel-eslint": "8.2.6",
