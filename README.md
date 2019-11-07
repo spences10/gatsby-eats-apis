@@ -19,8 +19,8 @@ import { Notes } from 'spectacle'
 ## Presenter mode
 
 Add `?presenter` or `?presenter&timer` immediately after the `/`,
-e.g.: `http://localhost:3000/#/0?presenter` or
-`http://localhost:3000/#/?presenter&timer`
+e.g.: `http://localhost:7000/#/0?presenter` or
+`http://localhost:7000/#/?presenter&timer`
 
 ## Contents
 
