@@ -48,6 +48,8 @@ export default LayoutNoFooter
 
 ---
 
+export default LayoutNoFooter
+
 # Karmarama
 
 ```notes
@@ -93,6 +95,8 @@ export default LayoutNoFooter
 
 ---
 
+export default Layout
+
 How about that GraphQL stuff?
 
 ```notes
@@ -128,24 +132,26 @@ export default FullScreenImage
 
 ---
 
+export default Layout
+
 # Poll 💈
 
 ```notes
 - As a show of hands who knows why GraphQL exists?
-
-- GraphQL was created by Facebook get only the data needed into React components.
-
-- Single endpoint.
 ```
 
 ---
+
+export default Layout
 
 # History lesson
 
 ```notes
 - Created 2012 by Dan Schafer, Nick Schrock and Lee Byron
 
-- Mobile, mobile, mobile
+- Around this time the whole industry was shifting to mobile
+
+- GraphQL was created by Facebook get only the data needed into React components for the iOS app.
 
 - Open Sourced 2015
 
@@ -153,6 +159,8 @@ export default FullScreenImage
 ```
 
 ---
+
+export default Layout
 
 # Speed
 
@@ -184,38 +192,13 @@ export default Split
   <StyledListItem>Stateless</StyledListItem>
 </StyledList>
 
----
-
-export default Split
-
-## Shape of Data
-
-<img
-  src={require('file-loader!./images/javascript-logo.svg')}
-  alt="JavaScript logo"
-/>
-
 ```notes
-
+- The difference is how you send the request to them
+- REST APIs URL Driven
+  - POST /user {name:'Scott'}
+- GraphQL APIs Query Driven
+  - POST /graphql {query:'query'}
 ```
-
----
-
-export default Layout
-
-## Also known as Static Sites
-
-```notes
-static site generators, SSGs
-```
-
----
-
-export default Split
-
-## Static
-
-- Early 90's
 
 ---
 
@@ -225,6 +208,14 @@ export default FullScreenImage
   src={require('file-loader!./images/ytho.jpg')}
   alt="y tho meme"
 />
+
+---
+
+Example, imagine your REST API is a vending machine and each piece of
+data is one item on there you have to select individually and collect.
+
+With GraphQL it enables a shopping list so you can get everything in
+one go
 
 ---
 
