@@ -1,0 +1,581 @@
+export { default as theme } from './src/index'
+
+import { Head, Appear } from 'mdx-deck'
+import { Split, Invert } from 'mdx-deck/layouts'
+
+import {
+  FullScreenImage,
+  LayoutNoFooter,
+  Layout,
+  BGImage,
+  StyledList,
+  StyledListItem
+} from './src/index'
+
+<Head>
+  <title>Gatsby eats APIs</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Arvo|Martel+Sans"
+    rel="stylesheet"
+  />
+  <link
+    href={require('file-loader!./static/favicon.png')}
+    rel="shortcut icon"
+  />
+</Head>
+
+export default Layout
+
+# Gatsby eats APIs
+
+---
+
+# 👋
+
+---
+
+export default LayoutNoFooter
+
+# Scott Spence
+
+###### est. 2018
+
+```notes
+- Been web a developer since 2018
+
+- Analyst Developer since 2007
+```
+
+---
+
+export default LayoutNoFooter
+
+# Karmarama
+
+```notes
+- Part of Accenture Interactive
+
+- Creative Products
+
+- Lidl
+
+- BT
+
+- EDF
+
+- Guide Dogs
+
+- City to Sea
+```
+
+---
+
+export default LayoutNoFooter
+
+<img
+  src={require('file-loader!./images/karmaLogo.png')}
+  alt="karmarama logo"
+/>
+
+---
+
+export default Invert
+
+# Warning!
+
+---
+
+export default LayoutNoFooter
+
+# Excessive use
+
+# of gif's
+
+# memes and emoji
+
+---
+
+export default Layout
+
+How about that GraphQL stuff?
+
+```notes
+- I'm here today, to talk to you about Gatsby
+```
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/not-this-guy.jpeg')}
+  alt="Leo De Cap as The Great Gatsby"
+/>
+
+```notes
+- Not this guy!
+```
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/gatsby-logo.png')}
+  alt="Leo De Cap as The Great Gatsby"
+/>
+
+```notes
+- This guy!
+- But first!
+```
+
+---
+
+export default Layout
+
+# Poll 💈
+
+```notes
+- As a show of hands who knows why GraphQL exists?
+```
+
+---
+
+export default Layout
+
+# History lesson
+
+```notes
+- Created 2012 by Dan Schafer, Nick Schrock and Lee Byron
+
+- Around this time the whole industry was shifting to mobile
+
+- GraphQL was created by Facebook get only the data needed into React components for the iOS app.
+
+- Open Sourced 2015
+
+- Single endpoint
+```
+
+---
+
+export default Layout
+
+# Speed
+
+# 🏎
+
+---
+
+export default Split
+
+<StyledList>
+  <StyledListItem title>REST API</StyledListItem>
+  <StyledListItem>
+    Multiple Endpoints (GET /users, POST /product, ...)
+  </StyledListItem>
+  <StyledListItem>JSON Data is Exchanged</StyledListItem>
+  <StyledListItem>
+    Any Server-side Language, any frontend framework
+  </StyledListItem>
+  <StyledListItem>Stateless</StyledListItem>
+</StyledList>
+
+<StyledList>
+  <StyledListItem title>GraphQL API</StyledListItem>
+  <StyledListItem>One Endpoint Only (POST /graphql)</StyledListItem>
+  <StyledListItem>JSON Data is Exchanged</StyledListItem>
+  <StyledListItem>
+    Any Server-side Language, any frontend framework
+  </StyledListItem>
+  <StyledListItem>Stateless</StyledListItem>
+</StyledList>
+
+```notes
+- The difference is how you send the request to them
+- REST APIs URL Driven
+  - POST /user {name:'Scott'}
+- GraphQL APIs Query Driven
+  - POST /graphql {query:'query'}
+```
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/ytho.jpg')}
+  alt="y tho meme"
+/>
+
+---
+
+Example, imagine your REST API is a vending machine and each piece of
+data is one item on there you have to select individually and collect.
+
+With GraphQL it enables a shopping list so you can get everything in
+one go
+
+---
+
+export default Layout
+
+# Perf
+
+---
+
+export default Layout
+
+# People want things fast
+
+---
+
+export default Layout
+
+<img
+  height="200px"
+  src={require('file-loader!./images/google-logo.svg')}
+  alt="google logo"
+/>
+
+## Since 2010
+
+```notes
+- Perf has been a factor in it's ranking algorithm
+
+- That's not news, people are using mobile devices a lot more now,
+  there are two indexes, desktop and mobile
+
+```
+
+---
+
+export default Layout
+
+# How users interact with your site
+
+# _could_ impact rankings
+
+---
+
+# Click through rates
+
+---
+
+# Time spent on page
+
+---
+
+# Return rate
+
+```notes
+returning users
+```
+
+---
+
+export default Layout
+
+# Bounce Rate & Conversions
+
+## where it _really_ matters 💷💳💸🤑
+
+---
+
+export default Layout
+
+# How fast is fast enough?
+
+---
+
+export default Layout
+
+# 2 seconds ⏱
+
+---
+
+export default Layout
+
+Static means no work to be done at request time.
+
+---
+
+export default Layout
+
+Much smaller attack surface to secure and protect
+
+---
+
+export default Split
+
+# _Dynamic_
+
+<Appear>
+
+```notes
+- CDN
+- AWS load balancer
+- Web server for server things
+- database things
+```
+
+<div>Browser 👀</div>
+<div>⬇</div>
+<div>CDN 🌐</div>
+
+<div>⬇</div>
+<div>Load balancer ⚖</div>
+
+<div>⬇</div>
+<div>Web server 🤹‍♀️</div>
+
+<div>⬇</div>
+<div>Database server ‍🤹‍♀️</div>
+
+<div>⬇</div>
+<div>Browser 👀</div>
+
+</Appear>
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/jam-logo.jpg')}
+  alt="gatsby JAMstack logo"
+/>
+
+```notes
+Gatsby is more of a PWA generator
+```
+
+---
+
+export default LayoutNoFooter
+
+# Slides
+
+## [ss10.me/jam-talk](https://ss10.me/jam-talk)
+
+---
+
+# Gatsby eats APIs
+
+---
+
+# 👋
+
+---
+
+# Scott Spence
+
+###### est. 2018
+
+---
+
+## Karmarama
+
+```notes
+  <h4>Part of Accenture Interactive</h4>
+  <h4>Creative Products</h4>
+  <ul>
+    <li>Lidl</li>
+    <li>BT</li>
+    <li>Guide Dogs</li>
+    <li>EDF</li>
+    <li>City to Sea</li>
+  </ul>
+```
+
+---
+
+How about that GraphQL stuff?
+
+```notes
+  <h4>I'm here today, to talk to you about Gatsby</h4>
+```
+
+---
+
+![Leo De Cap as The Great Gatsby](./not-this-guy.jpeg)
+
+```notes
+  <h4>Not this guy!</h4>
+```
+
+---
+
+![Gatsbyjs logo](./gatsby-logo.png)
+
+```notes
+  <h4>This guy!</h4>
+  <h4>But first!</h4>
+```
+
+---
+
+# Poll 💈
+
+```notes
+  <h4>As a show of hands who knows why GraphQL exists?</h4>
+  <ol>
+    <li>
+      GraphQL was created by Facebook get only the data needed into
+      React components.
+    </li>
+    <li>Single endpoint</li>
+  </ol>
+```
+
+---
+
+# History lesson
+
+```notes
+  <ol>
+    <li>Created 2012 by Dan Schafer, Nick Schrock and Lee Byron</li>
+    <li>
+      GraphQL was created by Facebook get only the data needed into
+      React components.
+    </li>
+    <li>Mobile, mobile, mobile</li>
+    <li>Open Sourced 2015</li>
+    <li>Single endpoint</li>
+  </ol>
+```
+
+---
+
+# Speed
+
+# 🏎
+
+---
+
+# REST
+
+```notes
+  <h4>Why not REST?</h4>
+  <ol>
+    <li>Reduce endpoints</li>
+    <li>Reduce un needed data calls</li>
+  </ol>
+```
+
+---
+
+# What's GraphQL? 🤔
+
+---
+
+# It's not
+
+---
+
+A library or a framework.
+
+---
+
+A database technology.
+
+---
+
+# It is
+
+---
+
+A query language.
+
+```notes
+  <h4>What else would the QL stand for?</h4>
+```
+
+---
+
+For querying APIs
+
+---
+
+A single endpoint for your data
+
+---
+
+Named terribly
+
+---
+
+A great way to see the shape of your data
+
+---
+
+# Why Gatsby? 🤔
+
+```notes
+  <h4>If you want things to happen fast then use Gatsby.</h4>
+  <h4>Built with performance in mind</h4>
+  <ol>
+    <li>
+      GraphQL was created by engineers at Facebook to help pull data
+      needed data into React components.
+    </li>
+  </ol>
+  <h4>Based on popular and influential technology</h4>
+  <h4>Fun to use and learn</h4>
+```
+
+---
+
+# FAST
+
+---
+
+# BLAZING FAST 🚀
+
+---
+
+# Gatsby ❤'s GraphQL
+
+---
+
+# GraphQL layer built in
+
+---
+
+# There are three main ways to get data into a Gatsby site.
+
+---
+
+# Build time
+
+```notes
+  <h4>Build time</h4>
+  <ol>
+    <li>At build time using the Gatsby data layer.</li>
+  </ol>
+```
+
+---
+
+# At build time outside of the data layer, using unstructured data.
+
+```notes
+  <h4>Build time, outside data layer</h4>
+  <ol>
+    <li>Learn more about using unstructured data in Gatsby.</li>
+  </ol>
+```
+
+---
+
+# At run time fetching from the client.
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/t.hanks.gif')}
+  alt="tom hanks waiving"
+/>
