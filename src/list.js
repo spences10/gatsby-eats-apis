@@ -6,8 +6,9 @@ export const StyledList = styled.ul`
 `
 
 export const StyledListItem = styled.li`
-  font-weight: ${props => (props.bold ? 'bold' : 'normal')};
+  font-weight: ${props => (props.title ? 'bold' : 'normal')};
+  margin-bottom: ${props => (props.title ? '30px' : 'unset')};
   margin-top: 5px;
-  border: 1px solid gray;
-  background: #fafa;
+  border: 2px solid #1b2341;
+  background: #fafab1;
 `
