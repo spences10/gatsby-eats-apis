@@ -1,110 +1,49 @@
-[![Maintenance Status][maintenance-image]](#maintenance-status)
+# mdx-deck basic template
 
-# Spectacle Boilerplate
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a725bc6e-e146-40a7-9a27-39aedfd8e73e/deploy-status)](https://app.netlify.com/sites/spreading-the-jam-stack-2019/deploys)
 
-## Notes
-
-```
-import { Notes } from 'spectacle'
-
-<Notes>
-  <h4>Slide notes</h4>
-  <ol>
-    <li>First note</li>
-    <li>Second note</li>
-  </ol>
-</Notes>
-```
+This was generated with [mdx-deck][]'s `npm init deck` command.
 
 ## Presenter mode
 
-Add `?presenter` or `?presenter&timer` immediately after the `/`,
-e.g.: `http://localhost:7000/#/0?presenter` or
-`http://localhost:7000/#/?presenter&timer`
+Windows Alt+p
 
-## Contents
+Add `/?mode=presenter#0` to the URL you're using!
 
-- [Reference](#reference)
-- [Getting Started](#getting-started)
-- [Build & Deployment](#build-deployment)
+## Overview mode
 
-## Reference
+Windows Alt+o
 
-The Spectacle core API is available at
-[https://github.com/FormidableLabs/spectacle/blob/master/README.md](https://github.com/FormidableLabs/spectacle/blob/master/README.md).
+## Development
 
-For more information about MDX syntax and how it all works, check out
-the [MDX documentation](https://mdxjs.com/).
+To run the presentation deck in development mode:
 
-### Slides
-
-Slides are separated with `---`.
-
-To customize specific MDX functionality in Spectacle Boilerplate MDX,
-including what characters are used to demarcate slide breaks, refer to
-the `loader.js` file. We don't recommend altering this functionality
-unless necessary.
-
-## Getting Started
-
-After downloading the boilerplate, your first order of business is to
-open a terminal and run
-
-```bash
-yarn
-```
-
-or
-
-```bash
-npm install
-```
-
-Next, run
-
-```bash
-rm -R .git
-```
-
-to remove the existing version control.
-
-Then, to start up the local server, run
-
-```bash
-yarn start
-```
-
-or
-
-```bash
+```sh
 npm start
 ```
 
-Open a browser and hit [http://localhost:3000](http://localhost:3000),
-and you're ready to roll. Modify `index.mdx` to see changes, but the
-best part about MDX is that you can create your own React components
-and import them into the `index.mdx` file to seamlessly integrate with
-markdown!
+Edit the [`deck.mdx`](deck.mdx) file to get started.
 
-## Build & Deployment
+## Exporting
 
-Building the dist version of the project is as easy as running
+To build the presentation deck as static HTML:
 
-```bash
+```sh
 npm run build
 ```
 
-If you want to deploy the slideshow to surge, run
+To export a PDF:
 
-```bash
-npm run deploy
+```sh
+npm run pdf
 ```
 
-## Maintenance Status: Active
+To export an image of the title slide:
 
-Formidable is actively working on this project, and we expect to
-continue for work for the foreseeable future. Bug reports, feature
-requests and pull requests are welcome.
+```sh
+npm run image
+```
 
-[maintenance-image]:
-  https://img.shields.io/badge/maintenance-active-green.svg
+For more documentation see the [mdx-deck][] repo.
+
+[mdx-deck]: https://github.com/jxnblk/mdx-deck
