@@ -146,6 +146,8 @@ export default Layout
 
 # History lesson
 
+###### (quick)
+
 ```notes
 - Created 2012 by Dan Schafer, Nick Schrock and Lee Byron
 
@@ -156,6 +158,14 @@ export default Layout
 - Open Sourced 2015
 
 - Single endpoint
+
+- Hierarchical: Another important aspect of GraphQL is its hierarchical nature.
+
+- GraphQL naturally follows relationships between objects
+
+- a RESTful service may require multiple round-trips (resource-intensive on mobile networks)
+
+- or a complex join statement in SQL.
 ```
 
 ---
@@ -190,30 +200,6 @@ export default Split
   - POST /user {name:'Scott'}
 - GraphQL APIs Query Driven
   - POST /graphql {query:'query'}
-```
-
----
-
-export default Split
-
-```json
-{
-  site {
-    siteMetadata {
-      title
-    }
-  }
-}
-```
-
-```json
-{
-  "site": {
-    "siteMetadata": {
-      "title": "A Gatsby site!"
-    }
-  }
-}
 ```
 
 ---
