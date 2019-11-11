@@ -1,6 +1,6 @@
 export { default as theme } from './src/index'
 
-import { Head, Appear } from 'mdx-deck'
+import { Head } from 'mdx-deck'
 import { Split, Invert } from 'mdx-deck/layouts'
 
 import {
@@ -183,7 +183,6 @@ export default Split
   </StyledListItem>
   <StyledListItem>Stateless</StyledListItem>
 </StyledList>
-
 <StyledList>
   <StyledListItem title>GraphQL API</StyledListItem>
   <StyledListItem>One Endpoint Only (POST /graphql)</StyledListItem>
@@ -314,39 +313,6 @@ Static means no work to be done at request time.
 export default Layout
 
 Much smaller attack surface to secure and protect
-
----
-
-export default Split
-
-# _Dynamic_
-
-<Appear>
-
-```notes
-- CDN
-- AWS load balancer
-- Web server for server things
-- database things
-```
-
-<div>Browser 👀</div>
-<div>⬇</div>
-<div>CDN 🌐</div>
-
-<div>⬇</div>
-<div>Load balancer ⚖</div>
-
-<div>⬇</div>
-<div>Web server 🤹‍♀️</div>
-
-<div>⬇</div>
-<div>Database server ‍🤹‍♀️</div>
-
-<div>⬇</div>
-<div>Browser 👀</div>
-
-</Appear>
 
 ---
 
@@ -523,16 +489,15 @@ A great way to see the shape of your data
 # Why Gatsby? 🤔
 
 ```notes
-  <h4>If you want things to happen fast then use Gatsby.</h4>
-  <h4>Built with performance in mind</h4>
-  <ol>
-    <li>
-      GraphQL was created by engineers at Facebook to help pull data
-      needed data into React components.
-    </li>
-  </ol>
-  <h4>Based on popular and influential technology</h4>
-  <h4>Fun to use and learn</h4>
+- If you want things to happen fast then use Gatsby.
+
+- Built with performance in mind
+
+- GraphQL was created by engineers at Facebook to help pull data needed data into React components.
+
+- Based on popular and influential technology
+
+- Fun to use and learn
 ```
 
 ---
@@ -545,7 +510,7 @@ A great way to see the shape of your data
 
 ---
 
-# Gatsby ❤'s GraphQL
+# Gatsby 💜's GraphQL
 
 ---
 
