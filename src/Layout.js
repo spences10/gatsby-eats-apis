@@ -12,9 +12,9 @@ const Wrapper = styled.main`
 `
 
 const Footer = styled.footer`
-  font-size: 14px;
+  font-size: 18px;
   color: #44434b;
-  padding: 30px 100px;
+  padding: 20px 90px;
   text-align: right;
   width: 100vw;
   border-top: 2px solid #44434b;
