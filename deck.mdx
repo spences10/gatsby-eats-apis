@@ -8,6 +8,7 @@ import {
   LayoutNoFooter,
   Layout,
   BGImage,
+  BigImage,
   StyledList,
   StyledListItem,
 } from './src/index'
@@ -52,6 +53,10 @@ export default LayoutNoFooter
 - Analyst Developer 10 years previously
 
 - Large financial organisations
+
+- I'm married
+
+- Wife and Daughter
 ```
 
 ---
@@ -64,10 +69,6 @@ export default FullScreenImage
 />
 
 ```notes
-- I'm married
-
-- Wife and Daughter
-
 - That's not them
 ```
 
@@ -88,7 +89,10 @@ export default FullScreenImage
 
 export default LayoutNoFooter
 
-# Karmarama
+<BigImage
+  src={require('file-loader!./images/karma-logo.svg')}
+  alt="karmarama logo"
+/>
 
 ```notes
 - I work at Karmarama
@@ -110,15 +114,6 @@ export default LayoutNoFooter
 
 ---
 
-export default LayoutNoFooter
-
-<img
-  src={require('file-loader!./images/karmaLogo.png')}
-  alt="karmarama logo"
-/>
-
----
-
 export default Invert
 
 # Warning!
@@ -129,9 +124,15 @@ export default LayoutNoFooter
 
 # Excessive use
 
-# of gif's
+# of GIFs
 
-# memes and emoji
+# Memes and Emoji
+
+---
+
+# Sorry
+
+###### not sorry
 
 ---
 
@@ -160,9 +161,9 @@ export default FullScreenImage
 
 export default FullScreenImage
 
-<BGImage
-  src={require('file-loader!./images/gatsby-logo.png')}
-  alt="Leo De Cap as The Great Gatsby"
+<BigImage
+  src={require('file-loader!./images/gatsby-logo.svg')}
+  alt="Gatsby Logo by Sacha Greif"
 />
 
 ```notes
