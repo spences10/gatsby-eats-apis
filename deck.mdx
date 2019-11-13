@@ -8,8 +8,9 @@ import {
   LayoutNoFooter,
   Layout,
   BGImage,
+  BigImage,
   StyledList,
-  StyledListItem
+  StyledListItem,
 } from './src/index'
 
 <Head>
@@ -32,6 +33,12 @@ export default Layout
 
 # 👋
 
+###### first time
+
+```notes
+- Hi I'm Scott, this is my first time giving a conference talk
+```
+
 ---
 
 export default LayoutNoFooter
@@ -43,16 +50,53 @@ export default LayoutNoFooter
 ```notes
 - Been web a developer since 2018
 
-- Analyst Developer since 2007
+- Analyst Developer 10 years previously
+
+- Large financial organisations
+
+- I'm married
+
+- Wife and Daughter
+```
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/summer-holidays-children-people-concept-600w-157340357.jpg')}
+  alt="Boris, Leo, Darcy"
+/>
+
+```notes
+- That's not them
+```
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/cat-dad.jpg')}
+  alt="Boris, Leo, Darcy"
+/>
+
+```notes
+- I'm a cat dad
 ```
 
 ---
 
 export default LayoutNoFooter
 
-# Karmarama
+<BigImage
+  src={require('file-loader!./images/karma-logo.svg')}
+  alt="karmarama logo"
+/>
 
 ```notes
+- I work at Karmarama
+
 - Part of Accenture Interactive
 
 - Creative Products
@@ -70,15 +114,6 @@ export default LayoutNoFooter
 
 ---
 
-export default LayoutNoFooter
-
-<img
-  src={require('file-loader!./images/karmaLogo.png')}
-  alt="karmarama logo"
-/>
-
----
-
 export default Invert
 
 # Warning!
@@ -89,9 +124,15 @@ export default LayoutNoFooter
 
 # Excessive use
 
-# of gif's
+# of GIFs
 
-# memes and emoji
+# Memes and Emoji
+
+---
+
+# Sorry
+
+###### not sorry
 
 ---
 
@@ -120,9 +161,9 @@ export default FullScreenImage
 
 export default FullScreenImage
 
-<BGImage
-  src={require('file-loader!./images/gatsby-logo.png')}
-  alt="Leo De Cap as The Great Gatsby"
+<BigImage
+  src={require('file-loader!./images/gatsby-logo.svg')}
+  alt="Gatsby Logo by Sacha Greif"
 />
 
 ```notes
@@ -137,7 +178,11 @@ export default Layout
 # Poll 💈
 
 ```notes
+- Before that though!
+
 - As a show of hands who knows why GraphQL exists?
+
+- I will take that information and proceed
 ```
 
 ---
@@ -170,19 +215,33 @@ A query language.
 
 ---
 
-For querying APIs
+For querying APIs.
 
 ---
 
 A single endpoint for your data
 
+```notes
+- Also
+```
+
 ---
 
 Named terribly
 
+```notes
+- Quite good though, for a developer
+```
+
 ---
 
 A great way to see the shape of your data
+
+```notes
+- as a developer
+
+- poll out of the way time for a history lesson
+```
 
 ---
 
@@ -193,23 +252,27 @@ export default Layout
 ###### (quick)
 
 ```notes
-- Created 2012 by Dan Schafer, Nick Schrock and Lee Byron
+- Created 2012 by three Facebook
+
+- Dan Schafer, Nick Schrock and Lee Byron
 
 - Around this time the whole industry was shifting to mobile
 
+- Facebook REST API was too big, slowing gown mobile
+
 - GraphQL was created by Facebook get only the data needed into React components for the iOS app.
-
-- Open Sourced 2015
-
-- Single endpoint
-
-- Hierarchical: Another important aspect of GraphQL is its hierarchical nature.
 
 - GraphQL naturally follows relationships between objects
 
-- a RESTful service may require multiple round-trips (resource-intensive on mobile networks)
+- Hierarchical: Another important aspect of GraphQL is its hierarchical nature.
+
+- a RESTful service may require multiple round-trips to get data needed
 
 - or a complex join statement in SQL.
+
+- (resource-intensive on mobile networks)
+
+- Open Sourced 2015
 ```
 
 ---
@@ -238,6 +301,8 @@ export default Split
 </StyledList>
 
 ```notes
+- When talking about APIs here I mean web APIs exposed on a sever somewhere
+
 - The difference is how you send the request to them
 
 - REST APIs URL Driven
@@ -248,6 +313,16 @@ export default Split
 
   - POST /graphql {query:'query'}
 ```
+
+---
+
+# Example
+
+imagine your REST API is a vending machine and each piece of data is
+one item on there you have to select individually and collect.
+
+With GraphQL it enables a shopping list so you can get everything in
+one go
 
 ---
 
@@ -263,11 +338,9 @@ export default FullScreenImage
 # Why Gatsby? 🤔
 
 ```notes
-- If you want things to happen fast then use Gatsby.
+- If you want things to happen fast Gatsby is "optimised out of the box".
 
 - Built with performance in mind
-
-- GraphQL was created by engineers at Facebook to help pull data needed data into React components.
 
 - Based on popular and influential technology
 
@@ -281,14 +354,6 @@ export default Layout
 # Speed
 
 # 🏎
-
----
-
-Example, imagine your REST API is a vending machine and each piece of
-data is one item on there you have to select individually and collect.
-
-With GraphQL it enables a shopping list so you can get everything in
-one go
 
 ---
 
@@ -364,6 +429,10 @@ export default Layout
 export default Layout
 
 # 2 seconds ⏱
+
+```notes
+- this is where Gatsby comes in
+```
 
 ---
 
