@@ -8,15 +8,18 @@ export default {
   font: 'Martel Sans',
   h1: {
     fontFamily: 'Arvo',
-    fontWeight: 600
+    fontWeight: 600,
+  },
+  h6: {
+    margin: '0',
   },
   // custom colors
   colors: {
     text: '#34434b',
     background: '#fafafa',
-    link: '#f0f'
+    link: '#f0f',
   },
   img: {
-    maxHeight: '100%'
-  }
+    maxHeight: '100%',
+  },
 }
