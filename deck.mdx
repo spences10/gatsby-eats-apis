@@ -11,6 +11,7 @@ import {
   BigImage,
   StyledList,
   StyledListItem,
+  Icon,
 } from './src/index'
 
 <Head>
@@ -64,12 +65,33 @@ export default LayoutNoFooter
 export default FullScreenImage
 
 <BGImage
-  src={require('file-loader!./images/summer-holidays-children-people-concept-600w-157340357.jpg')}
+  src={require('file-loader!./images/family2.jpg')}
   alt="Boris, Leo, Darcy"
 />
 
 ```notes
 - That's not them
+
+- This is just for illustration purposes
+
+- If you had a hard time visualising what a family looked like
+```
+
+---
+
+export default FullScreenImage
+
+<BigImage
+  src={require('file-loader!./images/family1.webp')}
+  alt="Boris, Leo, Darcy"
+/>
+
+```notes
+- That's not them either
+
+- This is just for illustration purposes
+
+- If you had a hard time visualising what a family looked like
 ```
 
 ---
@@ -187,64 +209,6 @@ export default Layout
 
 ---
 
-# What's GraphQL? 🤔
-
----
-
-# It's not
-
----
-
-A library or a framework.
-
----
-
-A database technology.
-
----
-
-# It is
-
----
-
-A query language.
-
-```notes
-- What else would the QL stand for?
-```
-
----
-
-For querying APIs.
-
----
-
-A single endpoint for your data
-
-```notes
-- Also
-```
-
----
-
-Named terribly
-
-```notes
-- Quite good though, for a developer
-```
-
----
-
-A great way to see the shape of your data
-
-```notes
-- as a developer
-
-- poll out of the way time for a history lesson
-```
-
----
-
 export default Layout
 
 # History lesson
@@ -252,13 +216,13 @@ export default Layout
 ###### (quick)
 
 ```notes
-- Created 2012 by three Facebook
+- Created 2012 by three Facebook engineers
 
 - Dan Schafer, Nick Schrock and Lee Byron
 
 - Around this time the whole industry was shifting to mobile
 
-- Facebook REST API was too big, slowing gown mobile
+- Facebook REST API was too big, slowing down mobile
 
 - GraphQL was created by Facebook get only the data needed into React components for the iOS app.
 
@@ -273,6 +237,84 @@ export default Layout
 - (resource-intensive on mobile networks)
 
 - Open Sourced 2015
+```
+
+---
+
+export default Layout
+
+# What's GraphQL? 🤔
+
+---
+
+export default Layout
+
+# It's not
+
+---
+
+export default Layout
+
+A library or a framework.
+
+---
+
+export default Layout
+
+A database technology.
+
+---
+
+export default Layout
+
+# It is
+
+---
+
+export default Layout
+
+A query language.
+
+```notes
+- What else would the QL stand for?
+```
+
+---
+
+export default Layout
+
+For querying APIs.
+
+---
+
+export default Layout
+
+A single endpoint for your data
+
+```notes
+- Also
+```
+
+---
+
+export default Layout
+
+Named terribly
+
+```notes
+- Quite good though, for a developer
+```
+
+---
+
+export default Layout
+
+A great way to see the shape of your data
+
+```notes
+- as a developer
+
+- Let's have comparison.
 ```
 
 ---
@@ -316,13 +358,37 @@ export default Split
 
 ---
 
+export default Layout
+
 # Example
 
-imagine your REST API is a vending machine and each piece of data is
-one item on there you have to select individually and collect.
+---
 
-With GraphQL it enables a shopping list so you can get everything in
-one go
+export default Layout
+
+<Icon file={'vending-machine.svg'} />
+
+---
+
+export default Layout
+
+## Imagine your REST API is a vending machine
+
+## You select data parts individually and collect.
+
+---
+
+export default Layout
+
+<Icon file={'shopping-basket.svg'} />
+
+---
+
+export default Layout
+
+## With GraphQL it's like enabling shopping basket
+
+## so you can get everything in one go
 
 ---
 
@@ -334,6 +400,8 @@ export default FullScreenImage
 />
 
 ---
+
+export default Layout
 
 # Why Gatsby? 🤔
 
@@ -396,13 +464,19 @@ export default Layout
 
 ---
 
+export default Layout
+
 # Click through rates
 
 ---
 
+export default Layout
+
 # Time spent on page
 
 ---
+
+export default Layout
 
 # Return rate
 
@@ -416,7 +490,9 @@ export default Layout
 
 # Bounce Rate & Conversions
 
-## where it _really_ matters 💷💳💸🤑
+## where it _really_ matters
+
+# 💷 💳 💸 🤑
 
 ---
 
@@ -430,6 +506,17 @@ export default Layout
 
 # 2 seconds ⏱
 
+---
+
+export default Layout
+
+<img
+  src={require('file-loader!./images/mobile-page-speed.png')}
+  alt=""
+/>
+
+###### [https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)
+
 ```notes
 - this is where Gatsby comes in
 ```
@@ -438,37 +525,39 @@ export default Layout
 
 export default Layout
 
-Static means no work to be done at request time.
+# FAST
 
 ---
 
 export default Layout
 
-Much smaller attack surface to secure and protect
-
----
-
-# FAST
-
----
-
 # BLAZING FAST 🚀
 
 ---
+
+export default Layout
 
 # Gatsby 💜's GraphQL
 
 ---
 
+export default Layout
+
 # GraphQL layer built in
 
 ---
+
+export default Layout
 
 # There are three main ways to get data into a Gatsby site.
 
 ---
 
+export default Layout
+
 # Build time
+
+<pre>yarn gatsby build</pre>
 
 ```notes
 - Build time</h4>
@@ -477,6 +566,8 @@ Much smaller attack surface to secure and protect
 ```
 
 ---
+
+export default Layout
 
 # At build time outside of the data layer, using unstructured data.
 
@@ -488,7 +579,65 @@ Much smaller attack surface to secure and protect
 
 ---
 
-# At run time fetching from the client.
+export default Layout
+
+# ~~At build time outside of the data layer, using unstructured data.~~
+
+```notes
+- Build time, outside data layer.
+
+- Learn more about using unstructured data in Gatsby.
+```
+
+---
+
+export default Layout
+
+# At run time, fetching from the client.
+
+---
+
+export default Layout
+
+# 🧐
+
+```notes
+- Let's take a look
+```
+
+---
+
+export default Layout
+
+# Slides
+
+## [ss10.dev/GatsbyEatsAPIs](https://ss10.dev/gatsbyeatsapis)
+
+<div>
+  Icons made by{' '}
+  <a
+    href="https://www.flaticon.com/authors/photo3idea-studio"
+    title="photo3idea_studio"
+  >
+    photo3idea_studio
+  </a>{' '}
+  from{' '}
+  <a href="https://www.flaticon.com/" title="Flaticon">
+    www.flaticon.com
+  </a>
+</div>
+
+---
+
+export default Layout
+
+<img
+  style={{ borderRadius: '50%', height: '20rem' }}
+  src={require('file-loader!./images/mug-face.jpg')}
+  alt="scott face"
+/>
+
+# [ss10.dev/git](https://ss10.dev/git)
 
 ---
 
@@ -498,24 +647,3 @@ export default FullScreenImage
   src={require('file-loader!./images/t.hanks.gif')}
   alt="tom hanks waiving"
 />
-
----
-
-export default FullScreenImage
-
-<BGImage
-  src={require('file-loader!./images/jam-logo.jpg')}
-  alt="gatsby JAMstack logo"
-/>
-
-```notes
-- Gatsby is more of a PWA generator
-```
-
----
-
-export default Layout
-
-# Slides
-
-## [ss10.me/GatsbyEatsAPIs](gatsbyeatsapis)
