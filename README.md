@@ -1,4 +1,19 @@
-# mdx-deck basic template
+# Gatsby Eats APIs Talk - API Days London 2019
+
+## Resources
+
+- GraphQL overview:
+  https://dev.to/hexrcs/graphql-crash-course-in-10-pics-3b04
+
+- nice video from Academind:
+  https://www.youtube.com/watch?v=PeAOEAmR0D0
+
+- GraphQL documentary: https://www.youtube.com/watch?v=783ccP__No8
+
+- **Code Example**:
+  https://github.com/spences10/gatsby-build-and-run-time-data-fetching
+
+## mdx-deck basic template
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a725bc6e-e146-40a7-9a27-39aedfd8e73e/deploy-status)](https://app.netlify.com/sites/spreading-the-jam-stack-2019/deploys)
 
