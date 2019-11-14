@@ -4,7 +4,7 @@
   "private": true,
   "description": "Deck created with mdx-deck",
   "scripts": {
-    "start": "mdx-deck deck.mdx -p 9000 --open",
+    "start": "mdx-deck deck.mdx -p 6789",
     "build": "mdx-deck build deck.mdx && mv dist public",
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
