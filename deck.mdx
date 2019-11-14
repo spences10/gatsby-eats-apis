@@ -392,15 +392,6 @@ export default Layout
 
 ---
 
-export default FullScreenImage
-
-<BGImage
-  src={require('file-loader!./images/ytho.jpg')}
-  alt="y tho meme"
-/>
-
----
-
 export default Layout
 
 # Why Gatsby? 🤔
@@ -413,6 +404,19 @@ export default Layout
 - Based on popular and influential technology
 
 - Fun to use and learn
+```
+
+---
+
+export default FullScreenImage
+
+<BGImage
+  src={require('file-loader!./images/ytho.jpg')}
+  alt="y tho meme"
+/>
+
+```notes
+- why is that important though?
 ```
 
 ---
@@ -518,6 +522,10 @@ export default Layout
 ###### [https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/)
 
 ```notes
+- this slide is from a
+
+- think with Google post, on mobile industry benchmarks (from 2018)
+
 - this is where Gatsby comes in
 ```
 
@@ -603,6 +611,14 @@ export default Layout
 
 ```notes
 - Let's take a look
+
+- Gatsby Default Starter
+
+- gatsby-source-graphql to fetch data at build time
+
+- we're using the Rick and Morty GraphQL endpoint for this one
+
+- for run time data fetching we're going to need axios
 ```
 
 ---
