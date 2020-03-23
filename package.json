@@ -20,7 +20,7 @@
     "file-loader": "3.0.1",
     "husky": "4.2.3",
     "mdx-deck": "1.10.2",
-    "prettier": "1.19.1",
+    "prettier": "2.0.2",
     "pretty-quick": "2.0.1"
   },
   "keywords": [],
