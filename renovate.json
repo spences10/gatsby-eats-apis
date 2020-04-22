@@ -6,5 +6,4 @@
     "packagePatterns": ["gatsby^"],
     "extends": "schedule:monthly"
   }
-  
 }
